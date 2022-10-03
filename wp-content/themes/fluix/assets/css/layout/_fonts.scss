@@ -1,0 +1,70 @@
+@font-face {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 400;
+	src: local("Roboto Regular"), local("Roboto-Regular"), url(../fonts/roboto-v20-latin-regular.woff2) format("woff2"),
+		url(../fonts/roboto-v20-latin-regular.woff) format("woff");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	src: local("Roboto Medium"), url(../fonts/roboto-v20-latin-500.woff2) format("woff2"),
+		url(../fonts/roboto-v20-latin-500.woff) format("woff");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Roboto;
+	font-style: italic;
+	font-weight: 500;
+	src: local("Roboto Medium Italic"), url(../fonts/roboto-v29-latin-500italic.woff2) format("woff2"),
+		url(../fonts/roboto-v29-latin-500italic.woff) format("woff");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 700;
+	src: local("Roboto Bold"), url(../fonts/roboto-v20-latin-700.woff2) format("woff2"),
+		url(../fonts/roboto-v20-latin-700.woff) format("woff");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Mont;
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(../fonts/43bc1d39-e6ab-4d76-88b2-397cf5c92526.woff2) format("woff2"),
+		url(../fonts/585/5624616/7896e26a-a97e-4a04-ad72-3324c29977cf.woff) format("woff");
+}
+
+@font-face {
+	font-family: Mont;
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(../fonts/70562c10-d8ab-42a5-888d-5c0e73ac7245.woff2) format("woff2"),
+		url(../fonts/ea1751cf-feea-4af3-a294-c334399f3dac.woff) format("woff");
+}
+
+@font-face {
+	font-family: Mont;
+	font-style: normal;
+	font-weight: 800;
+	font-display: swap;
+	src: url(../fonts/c49a6000-0e89-4b7c-948d-de48c656992f.woff2) format("woff2"),
+		url(../fonts/585/5853027/6ed58f7a-09d9-4e11-970b-4e8bf52fd336.woff) format("woff");
+}
+
+@font-face {
+	font-family: Fluix Icons;
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src: url(../fonts/fluix-icons-v1.6.woff2) format("woff2"), url(../fonts/fluix-icons-v1.6.woff) format("woff");
+}

@@ -1,0 +1,122 @@
+/*******************************************************************
+	Helper classes
+*******************************************************************/
+
+.fls-btn {
+	display: inline-block;
+	position: relative;
+	border-radius: 56px;
+	font-family: Roboto, sans-serif;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 48px;
+	letter-spacing: 0.4px;
+	text-transform: uppercase;
+	white-space: nowrap;
+	outline: none;
+	text-align: center;
+	padding: 0 1.5rem;
+	cursor: pointer;
+	-webkit-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+	&--new {
+		border-radius: 8px;
+		font-weight: 500;
+		text-transform: none;
+		padding: 0 2rem;
+		&--primary {
+			background-color: #ffbf00;
+			color: #664d00;
+			&:hover {
+				background-color: #ffd966;
+				color: #664d00;
+			}
+		}
+		&--dimmed {
+			background-color: #fff6db;
+			color: #664c00;
+			&:hover {
+				background-color: #ffe8a3;
+				color: #664d00;
+			}
+		}
+	}
+}
+
+/* Adding the hamburger icon to the menu. */
+.fls-footer-navigation__locale-switcher:before,
+.fls-main-navigation__switcher:before,
+.fls-mobile-navigation__switcher:before {
+	content: "";
+}
+
+.fls-btn-play__background:after,
+.fls-checklist-section-link__item:before,
+.fls-collapsable__action-icon:before,
+.fls-collapsable__action-text:after,
+.fls-collapsable__title:after,
+.fls-desktop-navigation-submenu--with-arrow .menu-item a:after,
+.fls-desktop-navigation-submenu .menu-item--about a:before,
+.fls-desktop-navigation-submenu .menu-item--all-industries a:before,
+.fls-desktop-navigation-submenu .menu-item--blog a:before,
+.fls-desktop-navigation-submenu .menu-item--careers a:before,
+.fls-desktop-navigation-submenu .menu-item--contact a:before,
+.fls-desktop-navigation-submenu .menu-item--customers a:before,
+.fls-desktop-navigation-submenu .menu-item--features a:before,
+.fls-desktop-navigation-submenu .menu-item--glossary a:before,
+.fls-desktop-navigation-submenu .menu-item--help-center a:before,
+.fls-desktop-navigation-submenu .menu-item--partner a:before,
+.fls-desktop-navigation-submenu .menu-item--pricing a:before,
+.fls-desktop-navigation-submenu .menu-item--professionals a:before,
+.fls-desktop-navigation-submenu .menu-item--resources a:before,
+.fls-desktop-navigation-submenu .menu-item--roi a:before,
+.fls-desktop-navigation-submenu .menu-item--vision a:before,
+.fls-desktop-navigation-submenu .menu-item--why-fluix a:before,
+.fls-download-form-modal__actions-form-by-id .hs-submit .actions:after,
+.fls-download-form-modal__button:before,
+.fls-download-form-modal__close:before,
+.fls-footer-navigation .footer-info-section .facebook:after,
+.fls-footer-navigation .footer-info-section .instagram:after,
+.fls-footer-navigation .footer-info-section .linkedin:after,
+.fls-footer-navigation .footer-info-section .twitter:after,
+.fls-footer-navigation .footer-info-section .youtube:after,
+.fls-footer-navigation .footer-menu-list__title:after,
+.fls-footer-navigation__locale-switcher:before,
+.fls-home-hero-banner__button:before,
+.fls-horizontal-hbspt-form .submitted-message p:after,
+.fls-main-navigation__switcher:before,
+.fls-mobile-navigation-submenu--with-arrow .menu-item a:after,
+.fls-mobile-navigation-submenu .menu-item--about a:before,
+.fls-mobile-navigation-submenu .menu-item--blog a:before,
+.fls-mobile-navigation-submenu .menu-item--careers a:before,
+.fls-mobile-navigation-submenu .menu-item--contact a:before,
+.fls-mobile-navigation-submenu .menu-item--customers a:before,
+.fls-mobile-navigation-submenu .menu-item--features a:before,
+.fls-mobile-navigation-submenu .menu-item--glossary a:before,
+.fls-mobile-navigation-submenu .menu-item--help-center a:before,
+.fls-mobile-navigation-submenu .menu-item--partner a:before,
+.fls-mobile-navigation-submenu .menu-item--pricing a:before,
+.fls-mobile-navigation-submenu .menu-item--professionals a:before,
+.fls-mobile-navigation-submenu .menu-item--resources a:before,
+.fls-mobile-navigation-submenu .menu-item--roi a:before,
+.fls-mobile-navigation-submenu .menu-item--vision a:before,
+.fls-mobile-navigation-submenu .menu-item--why-fluix a:before,
+.fls-mobile-navigation__close:before,
+.fls-mobile-navigation__menu-item-trigger-button:before,
+.fls-mobile-navigation__menu-item-trigger:after,
+.fls-mobile-navigation__switcher:before,
+.fls-resources-page-navigation__doc-list-link:before {
+	font-family: $font-icons;
+	speak: never;
+	font-size: 2rem;
+	line-height: 1em;
+	font-style: normal;
+	font-weight: 400;
+	font-variant: normal;
+	text-transform: none;
+	width: 1em;
+	height: 1em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

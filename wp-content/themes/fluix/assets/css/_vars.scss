@@ -1,0 +1,32 @@
+$font: "Roboto", sans-serif;
+$font-secondary: "Mont", sans-serif;
+$font-icons: "Fluix Icons", sans-serif;
+
+/* Defining the colors for the color picker in the editor. */
+$primary-color: #0061c2;
+$secondary-color: #1e90ff;
+
+$text-color: #002447;
+$text-color-light: #708ca9;
+$yellow-color: #ffbf00;
+$yellow-color-light: #ffd966;
+$yellow-color-dark: #664d00;
+
+$bg-color: #fff;
+$bg-color-yellow: #fff6db;
+$border-color: #ededed;
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 320px,
+	md: 640px,
+	lg: 768px,
+	xl: 990px
+) !default;
+
+$container-max-widths: (
+	sm: 320px,
+	md: 620px,
+	lg: 748px,
+	xl: 960px,
+) !default;

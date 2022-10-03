@@ -1,0 +1,51 @@
+section.hero {
+	padding-top: 7rem;
+	position: relative;
+	.row {
+		align-items: center;
+	}
+	.fls-home-hero {
+		&__action {
+			margin-top: 1rem;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			&-description {
+				margin-left: 1rem;
+				font-size: 14px;
+				line-height: 1.4rem;
+				color: #708ca9;
+			}
+			.fls-btn--new {
+				@media screen and (max-width: 768px) {
+					padding: 0 1rem;
+				}
+			}
+		}
+		&__description {
+			font-size: 19px;
+			line-height: 32px;
+			letter-spacing: 0.2px;
+			color: #3d5266;
+			margin-top: 0.6rem;
+		}
+		&__image {
+			@media (max-width: 640px) {
+				margin-top: 2rem;
+			}
+			img {
+				max-width: 100%;
+				width: 100%;
+			}
+		}
+		&__logos {
+			margin-top: 6rem;
+			width: 80%;
+			-o-object-fit: contain;
+			object-fit: contain;
+		}
+	}
+}
