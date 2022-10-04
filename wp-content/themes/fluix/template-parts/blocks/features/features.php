@@ -43,30 +43,32 @@ if (get_field('is_example')) :
 				$content = get_sub_field('content');
 				$tags		 = get_sub_field('tags');
 			?>
-				<div class="row fls-features-list__item">
-					<div class="col-5 col-s-12">
-						<?php if ($title <> '') : ?>
-							<div class="fls-title-l3">
-								<?php echo $title; ?>
-							</div>
-						<?php endif; ?>
-						<?php if ($image <> '') : ?>
-							<div class="fls-features-list__image l-hide">
-								<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['title']; ?>">
-							</div>
-						<?php endif; ?>
-						<?php if ($content <> '') : ?>
-							<div class="fls-features-list__content">
-								<?php echo $content; ?>
-							</div>
-						<?php endif; ?>
-					</div>
-					<div class="col-6 col-offset-1 s-hide">
-						<?php if ($image <> '') : ?>
-							<div class="fls-features-list__image">
-								<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['title']; ?>">
-							</div>
-						<?php endif; ?>
+				<div class="fls-features-list__item">
+					<div class="row">
+						<div class="col-5 col-s-12">
+							<?php if ($title <> '') : ?>
+								<div class="fls-title-l3">
+									<?php echo $title; ?>
+								</div>
+							<?php endif; ?>
+							<?php if ($image <> '') : ?>
+								<div class="fls-features-list__image l-hide">
+									<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['title']; ?>">
+								</div>
+							<?php endif; ?>
+							<?php if ($content <> '') : ?>
+								<div class="fls-features-list__content">
+									<?php echo $content; ?>
+								</div>
+							<?php endif; ?>
+						</div>
+						<div class="col-6 col-offset-1 s-hide">
+							<?php if ($image <> '') : ?>
+								<div class="fls-features-list__image">
+									<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['title']; ?>">
+								</div>
+							<?php endif; ?>
+						</div>
 					</div>
 					<div class="row fls-features-list">
 						<div class="col-3 col-s-12 fls-features-list__text">
