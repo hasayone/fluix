@@ -46,15 +46,20 @@ if (get_field('is_example')) :
 
 		<div class="wrapper">
 			<div class="row">
-				<div class="col-6 col-s-12">
+				<div class="col-5 col-s-12 col-m-6">
 					<?php if ($title <> '') : ?>
 						<h1 class="fls-title-l1 fls-text--no-text-transform">
 							<strong><?php echo $title; ?></strong>
 						</h1>
-					<?php endif; ?>
+					<?php endif; ?>	
 					<?php if ($description <> '') : ?>
 						<div class="fls-home-hero__description">
 							<?php echo $description; ?>
+						</div>
+					<?php endif; ?>
+					<?php if ($hero_img <> '') : ?>
+						<div class="fls-home-hero__image l-hide">
+							<img src="<?php echo $hero_img['url']; ?>" alt="<?php echo $hero_img['title']; ?>">
 						</div>
 					<?php endif; ?>
 					<div class="fls-home-hero__action">
@@ -69,7 +74,7 @@ if (get_field('is_example')) :
 					</div>
 				</div>
 
-				<div class="col-6 col-s-12">
+				<div class="col-6 col-m-5 col-offset-1 s-hide">
 					<?php if ($hero_img <> '') : ?>
 						<div class="fls-home-hero__image">
 							<img src="<?php echo $hero_img['url']; ?>" alt="<?php echo $hero_img['title']; ?>">
