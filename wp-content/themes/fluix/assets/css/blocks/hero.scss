@@ -1,5 +1,7 @@
-section.hero {
+@import "../vars";
+section.fls-hero {
 	padding-top: 7rem;
+	padding-bottom: 4rem;
 	position: relative;
 	.row {
 		align-items: center;
@@ -17,7 +19,7 @@ section.hero {
 				margin-left: 1rem;
 				font-size: 14px;
 				line-height: 1.4rem;
-				color: #708ca9;
+				color: $text-color-light;
 			}
 			.fls-btn--new {
 				@media screen and (max-width: 768px) {
@@ -29,7 +31,7 @@ section.hero {
 			font-size: 19px;
 			line-height: 32px;
 			letter-spacing: 0.2px;
-			color: #3d5266;
+			color: $text-color-dark;
 			margin-top: 0.6rem;
 		}
 		&__image {

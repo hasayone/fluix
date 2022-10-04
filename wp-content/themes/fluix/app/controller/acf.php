@@ -177,15 +177,15 @@ class acf
 				]
 			));
 				
-			// Learn more links Block
+			// Interesting articles Block
 			acf_register_block_type(array(
-				'name'						=> 'learn-more-links',
-				'title'						=> __('Learn more links'),
-				'description'			=> __('A custom Learn more links block.'),
-				'render_template'	=> get_theme_file_path("template-parts/blocks/learn-more-links/learn-more-links.php"),
-				'enqueue_style'   => get_template_directory_uri() . '/assets/css/blocks/learn-more-links.css',
+				'name'						=> 'interesting-articles',
+				'title'						=> __('Interesting articles'),
+				'description'			=> __('A custom Interesting articles blocks.'),
+				'render_template'	=> get_theme_file_path("template-parts/blocks/interesting-articles/interesting-articles.php"),
+				'enqueue_style'   => get_template_directory_uri() . '/assets/css/blocks/interesting-articles.css',
 				'category' 				=> 'fluix',
-				'keywords'				=> array('learn', 'more', 'links', 'fluix'),
+				'keywords'				=> array('interesting', 'articles', 'fluix'),
 				'icon' 						=> svg_icons::get('logo'),
 				// For Preview & Example
 				'example' => [

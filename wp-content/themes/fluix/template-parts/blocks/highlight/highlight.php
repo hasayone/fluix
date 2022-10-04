@@ -16,7 +16,7 @@ if (!empty($block['anchor'])) {
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'highlight';
+$className = 'fls-highlight';
 if (!empty($block['className'])) {
 	$className .= ' ' . $block['className'];
 }
@@ -24,20 +24,42 @@ if (!empty($block['align'])) {
 	$className .= ' align' . $block['align'];
 }
 
-// Load values and handle defaults.
-$title 						= get_field('title') ?: 'Your title here...';
+// Load values
+$title 						= get_field('title');
+$images						= get_field('images');
+$image_desktop		= $images["desktop"];
+$image_mobile			= $images["mobile"];
 
 if (get_field('is_example')) :
 	/* Render screenshot for example */ ?>
 
-	<img src="<?php echo get_template_directory_uri() . '/assets/img/highlight.png'; ?>" alt="is_example" style="width: 100%;">
+	<img src="<?php echo get_template_directory_uri() . '/assets/images/blocks/highlight.png'; ?>" alt="is_example" style="width: 100%;">
 
 <?php else :
 	/* Render HTML for block */ ?>
 
 	<section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
 
-		<?php /* section HTML here */ ?>
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-12 center">
+					<?php if ($title <> '') : ?>
+						<h2 class="fls-title-l2 fls-highlight__title">
+							<?php echo $title; ?>
+						</h2>
+					<?php endif; ?>
+				</div>
+				<div class="row center">
+					<div class="col-12">
+						<?php if ($image_desktop <> '') : ?>
+							<img class="fls-highlight__logos s-hide" src="<?php echo $image_desktop['url']; ?>" width="<?php echo $image_desktop['width']; ?>" alt="<?php echo $image_desktop['title']; ?>">
+						<?php endif; ?>
+						<?php if ($image_mobile <> '') : ?>
+							<img class="fls-highlight__logos l-hide" src="<?php echo $image_mobile['url']; ?>" width="<?php echo $image_mobile['width']; ?>" alt="<?php echo $image_mobile['title']; ?>">
+						<?php endif; ?>
+					</div>
+				</div>
+			</div>
 
 	</section>
 

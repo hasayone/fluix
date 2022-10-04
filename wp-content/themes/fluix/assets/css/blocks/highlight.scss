@@ -1,3 +1,36 @@
-section.highlight {
-	
+@import "../vars";
+section.fls-highlight {
+	padding: 4rem 0;
+	position: relative;
+	.wrapper {
+		background-image: none, -webkit-gradient(linear, left top, left bottom, from(#0061c2), to(#1e90ff));
+		background-image: none, -webkit-linear-gradient(top, #0061c2, #1e90ff);
+		background-image: none, -o-linear-gradient(top, #0061c2 0, #1e90ff 100%);
+		background-image: none, linear-gradient(180deg, #0061c2, #1e90ff);
+		padding: 3.5rem 7rem;
+		@media only screen and (min-width: 641px) and (max-width: 768px) {
+			padding: 3.5rem 3rem;
+		}
+		@media screen and (max-width: 640px) {
+			padding: 2rem 1.5rem 3rem;
+		}
+		color: #fff;
+		text-align: center;
+		border-radius: 1rem;
+		background-size: cover, cover;
+	}
+	.fls-highlight {
+		&__title {
+			color: #fff;
+			text-align: center;
+		}
+		&__logos {
+			max-width: 100%;
+			width: 100%;
+			margin-top: 3rem;
+			@media (max-width: 640px) {
+				margin-top: 2rem;
+			}
+		}
+	}
 }

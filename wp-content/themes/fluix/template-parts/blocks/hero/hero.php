@@ -16,7 +16,7 @@ if (!empty($block['anchor'])) {
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'hero';
+$className = 'fls-hero';
 if (!empty($block['className'])) {
 	$className .= ' ' . $block['className'];
 }
@@ -24,8 +24,8 @@ if (!empty($block['align'])) {
 	$className .= ' align' . $block['align'];
 }
 
-// Load values and handle defaults.
-$title 						= get_field('title') ?: 'Your title here...';
+// Load values
+$title 						= get_field('title');
 $description			= get_field('description');
 $button						= get_field('button');
 $btn_description	= get_field('btn_description');
@@ -37,7 +37,7 @@ $fImage_mobile		= $footer_images["footer_image_mobile"];
 if (get_field('is_example')) :
 	/* Render screenshot for example */ ?>
 
-	<img src="<?php echo get_template_directory_uri() . '/assets/img/hero.png'; ?>" alt="is_example" style="width: 100%;">
+	<img src="<?php echo get_template_directory_uri() . '/assets/images/blocks/hero.png'; ?>" alt="is_example" style="width: 100%;">
 
 <?php else :
 	/* Render HTML for block */ ?>

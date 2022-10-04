@@ -134,7 +134,7 @@ function scssTask() {
 // JS Task: minify scripts
 function jsTask() {
 
-	/* const libsFiles = src(jsLibs)
+	/*const libsFiles = src(jsLibs)
 		.pipe(concat('libs.min.js'))
 		.pipe(dest('wp-content/themes/' + projectConfig.foldersName + '/assets/js/'));
 */

@@ -1,3 +1,73 @@
-section.cta {
-	
+@import "../vars";
+section.fls-cta {
+	padding: 4rem 0;
+	position: relative;
+
+	.fls-cta {
+		&__wrapper {
+			background: none 50% no-repeat, none 50% no-repeat transparent;
+			padding: 0 7rem;
+		}
+		// Modifier
+		&--background-blue {
+			background-image: none, -webkit-gradient(linear, left top, left bottom, from(#0061c2), to(#1e90ff));
+			background-image: none, -webkit-linear-gradient(top, #0061c2, #1e90ff);
+			background-image: none, -o-linear-gradient(top, #0061c2 0, #1e90ff 100%);
+			background-image: none, linear-gradient(180deg, #0061c2, #1e90ff);
+			padding: 3.5rem 7rem;
+			@media only screen and (min-width: 641px) and (max-width: 768px) {
+				padding: 3.5rem 3rem;
+			}
+			@media screen and (max-width: 640px) {
+				padding: 2rem 1.5rem 3rem;
+			}
+			color: #fff;
+			text-align: center;
+			border-radius: 1rem;
+			background-size: cover, cover;
+			.fls-cta__title {
+				color: #fff;
+			}
+		}
+		// Elements
+		&__title {
+			text-align: center;
+		}
+		&__description {
+			font-size: 1rem;
+			text-align: center;
+			line-height: 1.625rem;
+			margin: 1rem auto 0;
+			@media (max-width: 640px) {
+				font-size: 1.1875rem;
+				line-height: 2rem;
+				letter-spacing: 0.2px;
+			}
+		}
+		&__button {
+			margin-top: 2rem;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			justify-content: center;
+			&-description {
+				margin-left: 1rem;
+				font-size: 14px;
+				line-height: 1.4rem;
+				color: $text-color-light;
+			}
+			.fls-btn--new {
+				@media screen and (max-width: 768px) {
+					padding: 0 1rem;
+				}
+				@media only screen and (max-width: 640px) {
+					display: block;
+					width: 246px;
+				}
+			}
+		}
+	}
 }

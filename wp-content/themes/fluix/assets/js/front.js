@@ -15,7 +15,10 @@
 
 			// Header
 			const $header = $('.fls-main-navigation');
-			
+
+			if ($(window).scrollTop() > 10) {
+				$header.addClass('fls-main-navigation--scrolled');
+			}
 
 			$(window).on('scroll', function () {
 

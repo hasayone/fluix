@@ -20,6 +20,37 @@
 	-webkit-transition: all 0.2s ease;
 	-o-transition: all 0.2s ease;
 	transition: all 0.2s ease;
+	&:after {
+		-webkit-transition: right 0.2s ease;
+		-o-transition: right 0.2s ease;
+		transition: right 0.2s ease;
+	}
+	&--with-arrow {
+		text-align: left;
+		padding-right: 3rem;
+		padding-left: 1.5rem;
+		min-width: 175px;
+		&:after {
+			content: "";
+			display: block;
+			width: 16px;
+			height: 16px;
+			position: absolute;
+			top: calc(50% - 8px);
+			right: 20px;
+			background: url(../images/arrow-right-white.svg) no-repeat 50%;
+		}
+		&:hover {
+			&:after {
+				right: 16px;
+			}
+		}
+		&--simple-dark-orange {
+			&:after {
+				background: url(../images/arrow-simple-right-dark-orange.svg) no-repeat 50%;
+			}
+		}
+	}
 	&--new {
 		border-radius: 8px;
 		font-weight: 500;
@@ -39,6 +70,36 @@
 			&:hover {
 				background-color: #ffe8a3;
 				color: #664d00;
+			}
+		}
+	}
+}
+
+.fls-link {
+	color: #1f8fff;
+	text-decoration: underline;
+	display: inline-block;
+	position: relative;
+	font-weight: 500;
+	&--small-arrow {
+		padding-right: 1.4rem;
+		&:after {
+			content: "";
+			position: absolute;
+			display: block;
+			width: 6px;
+			height: 10px;
+			background: url(../images/arrow-simple-right-light-blue.svg) no-repeat 0 0;
+			right: 0;
+			top: calc(50% - 4px);
+			-webkit-transition: right 0.2s ease, background 0.2s ease;
+			-o-transition: right 0.2s ease, background 0.2s ease;
+			transition: right 0.2s ease, background 0.2s ease;
+		}
+		&:hover {
+			&:after {
+				background: url(../images/arrow-simple-right-blue.svg) no-repeat 0 0;
+				right: -4px;
 			}
 		}
 	}

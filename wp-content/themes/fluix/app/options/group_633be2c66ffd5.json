@@ -44,8 +44,8 @@
             "sub_fields": [
                 {
                     "key": "field_633be354c7614",
-                    "label": "Image \/ Icon",
-                    "name": "image_icon",
+                    "label": "Image",
+                    "name": "image",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -128,5 +128,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1664869292
+    "modified": 1664876339
 }

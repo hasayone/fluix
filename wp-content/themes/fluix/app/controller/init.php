@@ -79,7 +79,8 @@ class init {
 	 */
 	function register_cpt() {
 
-		// FLUIX()->model->portfolio->register_post_type();
+		 FLUIX()->model->post->register_post_type();
+		 FLUIX()->model->post->register_taxonomy();
 
 	}
 
