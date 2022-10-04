@@ -9,6 +9,9 @@ section.fls-first-four-blocks {
 	}
 	.fls-title-l2 {
 		text-align: center;
+		@media (min-width: 769px) {
+			padding: 0 7.5rem;
+		}
 	}
 	.fls-four-blocks {
 		margin-top: 2.5rem;
