@@ -21,6 +21,7 @@ class backend
 		add_filter('manage_post_posts_columns', [$this, 'add_admin_list_columns'], 10);
 		add_action('manage_post_posts_custom_column', [$this, 'print_admin_list_columns'], 10, 2);
 
+		// Adding a new category to the block editor. 
 		add_filter('block_categories_all', function ($categories, $post) {
 			return array_merge(
 				$categories,
