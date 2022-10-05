@@ -14,7 +14,9 @@
 			margin-top: 2rem;
 		}
 		&-col-comp {
-			padding-left: 1.5rem;
+			@media (min-width: 768px) {
+				padding-left: 1.5rem;
+			}
 		}
 		li {
 			margin-bottom: 0.5rem;

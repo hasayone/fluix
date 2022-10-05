@@ -18,6 +18,11 @@ section.fls-highlight {
 		text-align: center;
 		border-radius: 1rem;
 		background-size: cover, cover;
+		.row {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 	}
 	.fls-highlight {
 		&__title {
